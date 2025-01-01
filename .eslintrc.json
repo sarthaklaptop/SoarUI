@@ -1,12 +1,17 @@
 {
-    "extends": ["next/core-web-vitals", "next/typescript"],
-    "rules": {
-      "@typescript-eslint/no-unused-vars": "off",
-      "@typescript-eslint/no-explicit-any": "off",
-      "prefer-const": "off",
-      "@typescript-eslint/ban-ts-comment": "off",
-      "@typescript-eslint/no-unused-expressions": "off",
-      "@typescript-eslint/no-wrapper-object-types": "off",
-      "@typescript-eslint/no-empty-interface": "off"
-    }
+  "extends": [
+    "next/core-web-vitals",
+    "next/typescript",
+    "plugin:@next/next/recommended"
+  ],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-unsafe-assignment": "off",
+    "@typescript-eslint/no-unsafe-member-access": "off",
+    "@typescript-eslint/no-unsafe-call": "off",
+    "@typescript-eslint/no-unsafe-return": "off"
   }
+}

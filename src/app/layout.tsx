@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "@/context/ThemeContext";
+import ClientThemeWrapper from "@/context/ClientThemeWrapper";
+import NavBar from "@/components/NavBar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,9 +17,9 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "SoarUI - Tailwind Component Library",
-  description: "SoarUI is a collection of beautiful, ready-to-use UI components built with Tailwind CSS and Next.js. Copy, paste, and build stunning applications effortlessly—no installation required.",
+  description:
+    "SoarUI is a collection of beautiful, ready-to-use UI components built with Tailwind CSS and Next.js. Copy, paste, and build stunning applications effortlessly—no installation required.",
 };
-
 
 export default function RootLayout({
   children,
@@ -28,7 +31,12 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <ThemeProvider>
+          <ClientThemeWrapper>
+            <NavBar/>
+            {children}
+          </ClientThemeWrapper>
+        </ThemeProvider>
       </body>
     </html>
   );

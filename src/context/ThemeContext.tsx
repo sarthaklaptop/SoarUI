@@ -11,13 +11,18 @@ export const ThemeProvider = ({ children }: any) => {
   const [theme, setTheme] = useState<string>("light");
 
   useEffect(() => {
+<<<<<<< HEAD
     // Ensure that code only runs on the client side
     if (typeof window !== "undefined") {
       // Get the theme from localStorage if available
+=======
+    if (typeof window !== "undefined") {
+>>>>>>> e3a68ec (Updared Theme to ShadCN Next theme)
       const savedTheme = localStorage.getItem("theme");
       if (savedTheme) {
         setTheme(savedTheme);
       } else {
+<<<<<<< HEAD
         // Fallback to "light" if no theme is saved
         setTheme("light");
       }
@@ -26,6 +31,14 @@ export const ThemeProvider = ({ children }: any) => {
 
   useEffect(() => {
     // Ensure that the theme is saved to localStorage when it changes
+=======
+        setTheme("light");
+      }
+    }
+  }, []);
+
+  useEffect(() => {
+>>>>>>> e3a68ec (Updared Theme to ShadCN Next theme)
     if (typeof window !== "undefined") {
       localStorage.setItem("theme", theme);
     }

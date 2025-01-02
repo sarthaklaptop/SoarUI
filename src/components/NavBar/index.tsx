@@ -12,6 +12,7 @@ export default function NavBar() {
           <Link href="/" className="text-4xl cherryBombOne shadow-2xl">
             <p className="">SoarUI</p>
           </Link>
+          
         </div>
 
         <div className="flex gap-4">

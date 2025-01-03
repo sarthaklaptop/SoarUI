@@ -41,12 +41,12 @@ export default function Home() {
             duration: 0.75,
             delay: 0.5, // Delays the subtitle animation slightly
           }}
-          className="font-bold text-gray-400 text-lg leading-7"
+          className="font-bold text-gray-400 dark:text-gray-500 text-lg leading-7"
         >
           RapidUI offers a collection of sleek, responsive, and ready-to-use
           components. Copy, paste, and customize with ease—no setup required.
           Perfect for developers seeking speed, simplicity, and elegance.{" "}
-          <span className="underline hover:underline-offset-4 decoration-cyan-400 text-gray-300">
+          <span className="underline dark:text-gray-500 hover:underline-offset-4 decoration-cyan-400 text-gray-300">
             Free and open-source!
           </span>
         </motion.p>

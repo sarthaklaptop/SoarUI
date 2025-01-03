@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Cherry_Bomb_One, Climate_Crisis, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import NavBar from "@/components/NavBar";
-import { ThemeProvider } from "@/components/theme-provider";
+import NavBar from "@/components/Demo/NavBar";
+import { ThemeProvider } from "@/components/Demo/theme-provider";
+import { Toaster, toast } from 'sonner'
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -47,6 +48,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <Toaster/>
           <NavBar />
           {children}
         </ThemeProvider>

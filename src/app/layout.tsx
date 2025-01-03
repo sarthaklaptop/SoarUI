@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Cherry_Bomb_One, Climate_Crisis, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/NavBar";
 import { ThemeProvider } from "@/components/theme-provider";
-// import ClientThemeWrapper from "@/context/ClientThemeWrapper";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,6 +12,17 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const cherryBombOne = Cherry_Bomb_One({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-cherry-bomb",
+});
+const climateCrisis = Climate_Crisis({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-climate-crisis",
 });
 
 export const metadata: Metadata = {
@@ -29,7 +39,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${climateCrisis.variable} ${cherryBombOne.variable} antialiased`}
       >
         <ThemeProvider
           attribute="class"

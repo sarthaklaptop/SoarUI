@@ -6,7 +6,7 @@ import { ThemeToggle } from "../theme-toggle";
 export default function NavBar() {
   return (
     <>
-      <div className="navbar my-10 flex justify-between w-11/12 mx-auto dark:foreground">
+      <div className="navbar my-10 flex justify-between w-4/5 mx-auto dark:foreground">
         <div className="">
 
           <Link href="/" className="text-4xl cherryBombOne shadow-2xl">

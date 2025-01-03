@@ -13,16 +13,13 @@ export default function CopyButton({ componentSource }: CopyButtonProps) {
 
   const handleCopy = async () => {
     try {
-      // Copy the component source code to the clipboard
       await navigator.clipboard.writeText(componentSource);
 
-      // Show toast notification
       toast.success("Code copied to clipboard!");
 
-      // Trigger animation
       setIsCopied(true);
-      setTimeout(() => setIsCopied(false), 1000); // Reset animation after 1 second
-    } catch (error) {
+      setTimeout(() => setIsCopied(false), 1000);
+    } catch {
       toast.error("Failed to copy!");
     }
   };

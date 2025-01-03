@@ -3,7 +3,7 @@ import { Cherry_Bomb_One, Climate_Crisis, Geist, Geist_Mono } from "next/font/go
 import "./globals.css";
 import NavBar from "@/components/Demo/NavBar";
 import { ThemeProvider } from "@/components/Demo/theme-provider";
-import { Toaster, toast } from 'sonner'
+import { Toaster } from 'sonner'
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

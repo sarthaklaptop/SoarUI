@@ -88,7 +88,7 @@ export default function Home() {
           }}
           className="flex flex-col"
         >
-          <a href="/buttons" className="cursor-pointer w-full border-2 border-gray-800 rounded-lg flex items-center justify-between p-4 hover:bg-slate-900 transition-all duration-150 hover:scale-105">
+          <a href="/buttons" className="cursor-pointer w-full border-2 border-gray-800 rounded-lg flex items-center justify-between p-4 hover:bg-slate-900 hover:text-white transition-all duration-150 hover:scale-105 ">
             <p className="font-bold text-lg" >Buttons</p>
             <CiLocationArrow1 className="hover:scale-125 transition-all hover:duration-150 text-2xl"/>
           </a>

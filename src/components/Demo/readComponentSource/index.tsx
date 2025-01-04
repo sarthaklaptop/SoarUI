@@ -4,7 +4,7 @@ import path from "path";
 export async function readComponentSource(directory: string, componentName: string) {
   const filePath = path.join(process.cwd(), "src", "components", directory, `${componentName}.tsx`);
   try {
-    console.log(filePath);
+    // console.log(filePath);
     const source = await fs.readFile(filePath, "utf8");
     return source;
   } catch (error) {

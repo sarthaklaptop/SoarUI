@@ -24,6 +24,13 @@ const files = [
   "btn-12",
   "btn-13",
   "btn-14",
+  "btn-15",
+  "btn-16",
+  "btn-17",
+  "btn-18",
+  "btn-19",
+  "btn-20",
+  "btn-21"
 ];
 
 export default function Page() {

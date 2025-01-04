@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { SlPrinter } from "react-icons/sl";
 
 export default function ButtonDemo() {
   return (

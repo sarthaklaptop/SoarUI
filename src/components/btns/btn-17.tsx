@@ -1,5 +1,3 @@
-import { Button } from "@/components/ui/button";
-
 export default function ButtonDemo() {
   return (
     <button className="relative inline-flex h-12 overflow-hidden rounded-full p-[2px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">

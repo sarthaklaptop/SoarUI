@@ -44,9 +44,9 @@ export default function Home() {
           className="font-bold text-gray-400 dark:text-gray-500 text-lg leading-7"
         >
           SoarUI offers a collection of sleek, responsive, and ready-to-use
-          components. Copy, paste, and customize with ease—no setup required.
+          components. Copy, paste, and customize with ease - no setup required.
           Perfect for developers seeking speed, simplicity, and elegance.{" "}
-          <span className="underline dark:text-gray-500 hover:underline-offset-4 decoration-cyan-400 text-gray-300">
+          <span className="underline dark:text-gray-500 hover:underline-offset-4 duration-100 decoration-cyan-400 hover:text-gray-50">
             Free and open-source!
           </span>
         </motion.p>
